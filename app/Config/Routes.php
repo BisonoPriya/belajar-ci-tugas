@@ -37,6 +37,8 @@ $routes->group('produk-kategori', function($routes) {
     $routes->get('delete/(:num)', 'ProdukCategory::delete/$1');
  
 });
+$routes->get('profile', 'Home::profile', ['filter' => 'auth']);
 
 
 $routes->get('contact', 'ContactController::index', ['filter' => 'auth']);
+$routes->resource('api', ['controller' => 'ApiController']);
