@@ -19,10 +19,14 @@ Proyek ini adalah platform toko online yang dibangun menggunakan [CodeIgniter 4]
   - Update jumlah produk
 - Sistem Transaksi
   - Proses checkout
+  - Diskon
+  - Penerapan diskon pada total harga (jika ada diskon aktif)
   - Riwayat transaksi
+  - Total ongkir
 - Panel Admin
   - Manajemen produk (CRUD)
   - Manajemen kategori
+  - Manajemen diskon
   - Laporan transaksi
   - Export data ke PDF
 - Sistem Autentikasi
@@ -79,11 +83,16 @@ Proyek menggunakan struktur MVC CodeIgniter 4:
   - AuthController.php - Autentikasi pengguna
   - ProdukController.php - Manajemen produk
   - TransaksiController.php - Proses transaksi
+  - DiskonController.php - Manajemen diskon
 - app/Models - Model untuk interaksi database
   - ProductModel.php - Model produk
+  - TransakasiModel.php -model transaksi
+  - transaksidetailModel.php -model detail transaksi
   - UserModel.php - Model pengguna
 - app/Views - Template dan komponen UI
   - v_produk.php - Tampilan produk
+  - v_checkout - Tampilan pembelian
+  - v_diskon -tampilan menejeman diskon
   - v_keranjang.php - Halaman keranjang
 - public/img - Gambar produk dan aset
 - public/NiceAdmin - Template admin
