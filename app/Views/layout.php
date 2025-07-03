@@ -22,7 +22,7 @@ if(uri_string()!=""){
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>- Toko Amba - <?php echo $hlm ?></title>
+  <title>- Tokoku - <?php echo $hlm ?></title>
   <meta content="" name="keywords">
 
   <!-- Favicons -->
