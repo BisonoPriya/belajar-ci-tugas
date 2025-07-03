@@ -1,7 +1,7 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
 
-History Transaksi Pembelian 
+History Transaksi Pembelian <strong><?= esc($username) ?></strong>
 <hr>
 
 <div class="table-responsive">
