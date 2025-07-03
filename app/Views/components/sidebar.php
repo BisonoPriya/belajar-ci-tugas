@@ -34,6 +34,13 @@
                 </a>
 </li>
 <li class="nav-item">
+  <a class="nav-link <?= (uri_string() == 'diskon') ? '' : 'collapsed' ?>" href="/diskon">
+    <i class="bi bi-cash-coin"></i>
+    <span>Diskon</span>
+  </a>
+</li><!-- End Diskon Nav -->
+
+<li class="nav-item">
     <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
         <i class="bi bi-person"></i>
         <span>Profile</span>

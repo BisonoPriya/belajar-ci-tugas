@@ -15,6 +15,12 @@
     <button type="submit" title="Search"><i class="bi bi-search"></i></button>
   </form>
 </div><!-- End Search Bar -->
+<span class="ms-3 px-3 py-1 bg-success text-white fw-bold rounded" style="font-size: 0.85rem; border-radius: 5px;">
+  🎉 Cihuy! ada Diskon: Rp <?= number_format(session()->get('diskon_nominal'), 0, ',', '.') ?>
+</span>
+
+
+
 
 <nav class="header-nav ms-auto">
   <ul class="d-flex align-items-center">

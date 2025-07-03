@@ -37,6 +37,15 @@ $routes->group('produk-kategori', function($routes) {
     $routes->get('delete/(:num)', 'ProdukCategory::delete/$1');
  
 });
+$routes->group('diskon', ['filter' => 'auth'], function($routes) {
+    $routes->get('/', 'DiskonController::index');
+    $routes->get('create', 'DiskonController::create');
+    $routes->post('store', 'DiskonController::store');
+    $routes->get('edit/(:num)', 'DiskonController::edit/$1');
+    $routes->post('update/(:num)', 'DiskonController::update/$1');
+    $routes->get('delete/(:num)', 'DiskonController::delete/$1');
+});
+
 $routes->get('profile', 'Home::profile', ['filter' => 'auth']);
 
 
